@@ -92,6 +92,148 @@
         </div>
 
     </footer>
+
+    <section class="popup">
+
+        <section class="popup_calculator">
+
+            <div>
+                <img src="img/icon-close-default.svg" alt="close icon">
+            </div>
+            <h4>Obliczyć koszt</h4>
+            <p>Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+            <div>
+                <img src="img/icon-info.svg" alt="info icon">
+            </div>
+
+            <div>
+                <input type="range" id="elConsumption" name="Annual_electricity_consumption"
+                       min="0" max="126600" step="100">
+            </div>
+
+            <div class="drop-down-list">
+
+                <div>
+                    <p>Strona świata</p>
+                    <select name="Strona świata" required="required" size="1">
+                        <option value="">Wybierz z listy</option>
+                        <option value="1">Południowy</option>
+                        <option value="2">Wschodni</option>
+                        <option value="3">Zachodni</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Materiał dachu</p>
+                    <select name="Materiał dachu" required="required" size="1">
+                        <option value="">Wybierz z listy</option>
+                        <option value="1">Południowy</option>
+                        <option value="2">Wschodni</option>
+                        <option value="3">Zachodni</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div>
+                <button>Obliczyć</button>
+            </div>
+
+        </section>
+
+        <section class="popup_question">
+
+            <div>
+                <img src="img/icon-close-white.svg" alt="close icon">
+            </div>
+            <div>
+                <p>Przybliżony koszt:</p>
+                <input type="text" value="40 000 zł">
+
+                <div>
+                    <button>Przeliczyć</button>
+                </div>
+            </div>
+
+            <div class="question">
+
+                <h4>Jakieś pytania?</h4>
+                <p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+
+                <form class="question" action="URL">
+
+                    <div class="userName">
+                        <p>Twoje imię</p>
+                        <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+                    </div>
+
+                    <div class="questionUserPhone">
+                        <p>Telefon</p>
+                        <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                    </div>
+
+                    <div class="questionuserEmail">
+                        <p>E-mail</p>
+                        <input type="text" name="userEmail" id="userEmail" placeholder="Wprowadź mail">
+                    </div>
+
+                
+                    <input type="submit" name="questionButton" id="questionButton" value="Wysłać prośbę">
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section class="feedback">
+
+            <div>
+                <img src="img/icon-close-white.svg" alt="close icon">
+            </div>
+
+            <div>
+                <img src="img/icon-checkMark.svg" alt="check mark icon">
+            </div>
+
+            <h4>Dziękuję za twoją prośbę</h4>
+            <p>Nasz menedżer wkrótce się z Tobą skontaktuje</p>
+
+            <form>
+                <p><input type="submit" value="Ok"></p>
+            </form>
+
+        </section>
+
+        <section class="callback">
+
+            <div>
+                <img src="img/icon-close-default.svg" alt="close icon">
+            </div>
+
+            <div>
+                <h2>Oddzwoń</h2>
+                <p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+            </div>
+
+            <form class="callback" action="url">
+                <div class="userName">
+                    <p>Twoje imię</p>
+                    <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+                </div>
+
+                <div class="questionUserPhone">
+                    <p>Telefon</p>
+                    <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                </div>
+
+                <input type="submit" name="callbackBtn" id="callbackBtn" value="Zadzwoń">
+
+            </form>
+
+        </section>
+
+    </section>
     
 </body>
 </html>
