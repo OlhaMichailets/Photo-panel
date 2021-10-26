@@ -1,0 +1,167 @@
+/* general conditions*/
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('fonts/Gilroy-Regular.woff') format('woff'),
+        url('fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+   }
+
+/* header section*/
+
+.lineHeader {
+    background-color: #20242D;
+    color: #FFFFFF;
+}
+
+.address {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.navList a {
+    color: #20242D;
+    font-size: 14px;
+}
+
+.navItem:first-child a {
+    color: #FF7129;
+}
+
+.lineHeader a {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+/*section promo*/
+
+.promo {
+    background-image: url(img/bg-mp-main.jpg);
+    width: 1600px;
+    height: 844px;
+}
+
+.promoHeader {
+    font-weight: bold;
+    font-size: 92px;
+    line-height: 111px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 270px;
+}
+
+.promoText {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+.promoButton{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.promoButton:hover{
+    color: #D35E22;
+}
+
+.promoBtn {
+    width: 187px;
+    height: 49px;
+    border: solid #FF7129;
+    background-color: #FF7129;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.promoBtn a,
+.promoBtn a:hover {
+    color: #FFFFFF;
+}
+
+.scrollImg{
+    text-align: center;
+    margin-top: 98px;
+}
+
+/* promoContent */
+
+.promoContentImg{
+    margin-top: 130px;
+    margin-left: 100px;
+    display: block;
+    float: left;
+}
+
+.promoContentTxt{
+    margin-top: 130px;
+    margin-left: 37px;
+    width: 600px;
+    display: block;
+    float: left;
+}
+
+.promoContentTxt h2 {
+    font-size: 48px;
+    color: #20242D;
+    margin-top: 201px;
+    margin-left: 82px;
+    margin-bottom: 65px;
+}
+
+.promoContentTxt p {
+    color: #20242D;
+    margin-bottom: 20px;
+}
+
+/*footer*/
+
+.footerContent{
+    margin-top: 800px;
+    background-color: #20242D;
+}
+
+.navListFooter a{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.CallbackBtn {
+    width: 187px;
+    height: 49px;
+    border: solid #FF7129;
+    background-color: #20242D;
+}
+
+.CallbackBtn a{
+    color: #FFFFFF;
+    background-color: #20242D;
+    font-size: 14px;
+    text-align: center;
+    margin: 0%;
+}
+
+.intellectProperty span {
+    font-size: 12px;
+    color: #7B7E85;
+}

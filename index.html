@@ -5,34 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foton-tech</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
     <header>
 
-        <div>
-            <a href="#"><img src="img/logo.png" alt="Foton-tech logo"></a>
+        <div class="logoLine">
+            <div class="logoImgLinkBlock">
+                <a href="#" class="logoImgLink"><img src="img/logo.png" alt="Foton-tech logo"></a>
+            </div>
 
+            <div class="navBlock">
             <nav>
-                <ul>
-                    <li><a href="#">Strona główna</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Projekty</a></li>
-                    <li><a href="#">Instalacja</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                <ul class="navList">
+                    <li class="navItem"><a href="#">Strona główna</a></li>
+                    <li class="navItem"><a href="#">O nas</a></li>
+                    <li class="navItem"><a href="#">Projekty</a></li>
+                    <li class="navItem"><a href="#">Instalacja</a></li>
+                    <li class="navItem"><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
+            </div>
             
         </div>
-        <div>
-            <address>Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
 
-            <div>
+        <div class="lineHeader">
+
+            <address class="address">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
+
+            <div class="iconMail">
                 <img src="img/icon-mail.svg" alt="mail icon">
                 <a href="mailto: dorotapawezka@gmail">dorotapawezka@gmail.com</a>
             </div>
 
-            <div>
+            <div class="iconPhone">
                 <img src="img/icon-phone.svg" alt="phone icon">
                 <a href="tel:+48695716531">+48695716531</a>
             </div>
@@ -43,20 +51,24 @@
 
     <main>
 
-        <section>
-            <h1>Panele Fotowoltaiczne</h1>
-            <p>Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.</p>
-            <button>Obliczyć koszt</button>
-            <div><img src="img/icon-scroll.svg" alt="scroll icon"></div>
+        <section class="promo">
+            <h1 class="promoHeader">Panele Fotowoltaiczne</h1>
+            <p class="promoText">Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.</p>
+            <div class="promoButton">
+                <button class="promoBtn">
+                    <a href="#">Obliczyć koszt</a>
+                </button>
+            </div>
+            <div class="scrollImg"><img src="img/icon-scroll.svg" alt="scroll icon"></div>
         </section>
 
-        <section>
+        <section class="promoContent">
 
-            <div>
+            <div class="promoContentImg">
                 <img src="img/mp-main.jpg" width="600px" height="600px" alt="image of house with solar panels">
             </div>
 
-            <div>
+            <div class="promoContentTxt">
                 <h2>Ty i twói dom</h2>
                 <p>Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny.
                 Codzienne dokonywane przez ciebie wybory - zarówno duże, jak i małe mają ogromny wpływ na środowisko.</p>
@@ -68,25 +80,29 @@
 
     </main>
 
-    <footer>
+    <footer class="footerContent">
         <div>
-            <a href="#"><img src="img/logo.png" alt="Foton-tech logo"></a>
+            <a href="#" class="logoImgLink"><img src="img/logo.png" alt="Foton-tech logo"></a>
 
             <nav>
-                <ul>
-                    <li><a href="#">Strona główna</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Projekty</a></li>
-                    <li><a href="#">Instalacja</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                <ul class="navListFooter">
+                    <li class="navItem"><a href="#">Strona główna</a></li>
+                    <li class="navItemFooter"><a href="#">O nas</a></li>
+                    <li class="navItemFooter"><a href="#">Projekty</a></li>
+                    <li class="navItemFooter"><a href="#">Instalacja</a></li>
+                    <li class="navItemFooter"><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
-
-            <button>Oddzwoń</button>
             
         </div>
 
-        <div>
+        <div class="CallbackButton">
+            <button class="CallbackBtn">
+                <a class="btnCallbackLink" href="#">Oddzwoń</a>
+            </button> 
+        </div>
+
+        <div class="intellectProperty">
             <span>Polityka prywatności</span>
             <span>Ochrona danych osobowych</span>
         </div>
@@ -97,47 +113,47 @@
 
         <section class="popupCalculator">
 
-            <div>
+            <div class="popupCalculatorImg">
                 <img src="img/icon-close-default.svg" alt="close icon">
             </div>
 
-            <h4>Obliczyć koszt</h4>
-            <p>Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+            <h4 class="popupCalculatorHeader">Obliczyć koszt</h4>
+            <p class="popupCalculatorTxt">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
 
-            <div>
+            <div class="iconInfo">
                 <img src="img/icon-info.svg" alt="info icon">
             </div>
 
-            <div>
+            <div class="popupCalculatorRange">
                 <input type="range" id="elConsumption" name="Annual_electricity_consumption"
                        min="0" max="126600" step="100">
             </div>
 
             <div class="dropDownList">
 
-                <div>
-                    <p>Strona świata</p>
-                    <select name="Strona świata" required="required" size="1">
-                        <option value="">Wybierz z listy</option>
-                        <option value="1">Południowy</option>
-                        <option value="2">Wschodni</option>
-                        <option value="3">Zachodni</option>
+                <div class="worldSide">
+                    <label class="worldSideHeader" for="worldSide">Strona świata</label>
+                    <select class="worldSideList" name="worldSide" required="required" size="1">
+                        <option class="worldSideItem" value="">Wybierz z listy</option>
+                        <option class="worldSideItem" value="1">Południowy</option>
+                        <option class="worldSideItem" value="2">Wschodni</option>
+                        <option class="worldSideItem" value="3">Zachodni</option>
                     </select>
                 </div>
 
-                <div>
-                    <p>Materiał dachu</p>
-                    <select name="Materiał dachu" required="required" size="1">
-                        <option value="">Wybierz z listy</option>
-                        <option value="1">Południowy</option>
-                        <option value="2">Wschodni</option>
-                        <option value="3">Zachodni</option>
+                <div class="roofMaterial">
+                    <label class="roofMaterialHeader" for="roofMaterial">Materiał dachu</label>
+                    <select class="roofMaterialList" name="roofMaterial" required="required" size="1">
+                        <option class="roofMaterialItem" value="">Wybierz z listy</option>
+                        <option class="roofMaterialItem" value="1">Południowy</option>
+                        <option class="roofMaterialItem" value="2">Wschodni</option>
+                        <option class="roofMaterialItem" value="3">Zachodni</option>
                     </select>
                 </div>
 
             </div>
 
-            <div>
+            <div class="btnCalculate">
                 <button>Obliczyć</button>
             </div>
 
@@ -145,43 +161,43 @@
 
         <section class="popupQuestion">
 
-            <div>
+            <div class="iconCloseWhite">
                 <img src="img/icon-close-white.svg" alt="close icon">
             </div>
             
-            <div>
-                <p>Przybliżony koszt:</p>
-                <span">40 000 zł</span>
+            <div class="questionInfo">
+                <p class="questionInfoTxt">Przybliżony koszt:</p>
+                <span class="questionInfoSum">40 000 zł</span>
 
-                <div>
+                <div class="returnCalculatorBtn">
                     <button>Przeliczyć</button>
                 </div>
             </div>
 
             <div class="question">
 
-                <h4>Jakieś pytania?</h4>
-                <p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
+                <h4 class="questionHeader">Jakieś pytania?</h4>
+                <p class="questionTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
 
                 <form class="questionForm" action="URL">
 
                     <div class="userName">
-                        <label>Twoje imię</label>
+                        <label for="userName">Twoje imię</label>
                         <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
                     </div>
 
                     <div class="questionUserPhone">
-                        <label>Telefon</label>
+                        <label for="userPhone">Telefon</label>
                         <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
                     </div>
 
                     <div class="questionUserEmail">
-                        <label>E-mail</label>
+                        <label for="userEmail">E-mail</label>
                         <input type="text" name="userEmail" id="userEmail" placeholder="Wprowadź mail">
                     </div>
 
                 
-                    <input type="submit" name="questionButton" id="questionButton" value="Wysłać prośbę">
+                    <input class="questionBtn" type="submit" name="questionButton" id="questionButton" value="Wysłać prośbę">
 
                 </form>
 
@@ -191,42 +207,42 @@
 
         <section class="feedback">
 
-            <div>
+            <div class="iconCloseWhite">
                 <img src="img/icon-close-white.svg" alt="close icon">
             </div>
 
-            <div>
+            <div class="iconCheckMark">
                 <img src="img/icon-checkMark.svg" alt="check mark icon">
             </div>
 
-            <h4>Dziękuję za twoją prośbę</h4>
-            <p>Nasz menedżer wkrótce się z Tobą skontaktuje</p>
+            <h4 class="feedbackHeader">Dziękuję za twoją prośbę</h4>
+            <p class="feedbackTxt">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
 
-            <form>
+            <form class="feedbackBtn">
                 <input type="submit" value="Ok">
             </form>
 
         </section>
 
-        <section class="callback">
+        <section class="callbackSection">
 
-            <div>
+            <div class="iconCloseDef">
                 <img src="img/icon-close-default.svg" alt="close icon">
             </div>
 
-            <div>
-                <h2>Oddzwoń</h2>
-                <p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+            <div class="callback">
+                <h2 class="callbackHeader">Oddzwoń</h2>
+                <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
             </div>
 
             <form class="callbackForm" action="url">
                 <div class="userName">
-                    <label>Twoje imię</label>
+                    <label for="userName">Twoje imię</label>
                     <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
                 </div>
 
                 <div class="questionUserPhone">
-                    <label>Telefon</label>
+                    <label for="userPhone">Telefon</label>
                     <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
                 </div>
 
