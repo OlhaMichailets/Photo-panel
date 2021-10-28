@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <title>Foton-tech</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
+
 <body>
 
-    <header>
+    <header class="headerBlock">
 
-        <div class="logoLine">
+        <div class="LogoNavBlock">
+
             <div class="logoImgLinkBlock">
                 <a href="#" class="logoImgLink"><img src="img/logo.png" alt="Foton-tech logo"></a>
             </div>
 
             <div class="navBlock">
-            <nav>
-                <ul class="navList">
-                    <li class="navItem"><a href="#">Strona główna</a></li>
-                    <li class="navItem"><a href="#">O nas</a></li>
-                    <li class="navItem"><a href="#">Projekty</a></li>
-                    <li class="navItem"><a href="#">Instalacja</a></li>
-                    <li class="navItem"><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
+                <nav>
+                    <ul class="navList">
+                        <li class="navItem"><a href="#">Strona główna</a></li>
+                        <li class="navItem"><a href="#">O nas</a></li>
+                        <li class="navItem"><a href="#">Projekty</a></li>
+                        <li class="navItem"><a href="#">Instalacja</a></li>
+                        <li class="navItem"><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
             </div>
-            
         </div>
 
-        <div class="lineHeader">
+        <div class="contactLine">
 
-            <address class="address">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
+            <div class="contactLineBlock">
 
-            <div class="iconMail">
-                <img src="img/icon-mail.svg" alt="mail icon">
-                <a href="mailto: dorotapawezka@gmail">dorotapawezka@gmail.com</a>
-            </div>
+                <address class="address">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
 
-            <div class="iconPhone">
-                <img src="img/icon-phone.svg" alt="phone icon">
-                <a href="tel:+48695716531">+48695716531</a>
+                <div class="contactIcons">
+
+                    <div class="iconMail">
+                        <img src="img/icon-mail.svg" alt="mail icon">
+                        <a href="mailto: dorotapawezka@gmail">dorotapawezka@gmail.com</a>
+                    </div>
+
+                    <div class="iconPhone">
+                        <img src="img/icon-phone.svg" alt="phone icon">
+                        <a href="tel:+48695716531">+48695716531</a>
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
@@ -52,14 +65,26 @@
     <main>
 
         <section class="promo">
-            <h1 class="promoHeader">Panele Fotowoltaiczne</h1>
-            <p class="promoText">Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.</p>
-            <div class="promoButton">
-                <button class="promoBtn">
-                    <a href="#">Obliczyć koszt</a>
-                </button>
-            </div>
-            <div class="scrollImg"><img src="img/icon-scroll.svg" alt="scroll icon"></div>
+
+            <div class="promoImg">
+
+                <h1 class="promoHeader">Panele Fotowoltaiczne</h1>
+                <p class="promoText">Kompleksowe usługi w zakresie montażu i podłączenia paneli<br>słonecznych.</p>
+
+                <div class="goCalcButton">
+
+                    <button class="goCalcBtn">
+                        <a href="#">Obliczyć koszt</a>
+                    </button>
+    
+                </div>
+
+                <div class="scrollImg">
+                    <img src="img/icon-scroll.svg" alt="scroll icon">
+                </div>
+
+            </div> 
+
         </section>
 
         <section class="promoContent">
@@ -81,26 +106,33 @@
     </main>
 
     <footer class="footerContent">
-        <div>
-            <a href="#" class="logoImgLink"><img src="img/logo.png" alt="Foton-tech logo"></a>
 
-            <nav>
-                <ul class="navListFooter">
-                    <li class="navItem"><a href="#">Strona główna</a></li>
-                    <li class="navItemFooter"><a href="#">O nas</a></li>
-                    <li class="navItemFooter"><a href="#">Projekty</a></li>
-                    <li class="navItemFooter"><a href="#">Instalacja</a></li>
-                    <li class="navItemFooter"><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
-            
-        </div>
+        <div class="LogoNavBlock">
 
-        <div class="CallbackButton">
-            <button class="CallbackBtn">
-                <a class="btnCallbackLink" href="#">Oddzwoń</a>
-            </button> 
+            <div class="logoImgLinkBlockFooter">
+                <a href="#" class="logoImgLink"><img src="img/logo.png" alt="Foton-tech logo"></a>
+            </div>
+
+            <div class="navBlock">
+                <nav>
+                    <ul class="navListFooter">
+                        <li class="navItem"><a href="#">Strona główna</a></li>
+                        <li class="navItem"><a href="#">O nas</a></li>
+                        <li class="navItem"><a href="#">Projekty</a></li>
+                        <li class="navItem"><a href="#">Instalacja</a></li>
+                        <li class="navItem"><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="CallbackButton">
+                <button class="CallbackBtn">
+                    <a class="btnCallbackLink" href="#">Oddzwoń</a>
+                </button> 
+            </div>
+
         </div>
+        
 
         <div class="intellectProperty">
             <span>Polityka prywatności</span>
@@ -108,6 +140,8 @@
         </div>
 
     </footer>
+
+
 
     <section class="popup">
 
@@ -117,16 +151,36 @@
                 <img src="img/icon-close-default.svg" alt="close icon">
             </div>
 
-            <h4 class="popupCalculatorHeader">Obliczyć koszt</h4>
-            <p class="popupCalculatorTxt">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+            <div class="popupCalculatorTitle">
 
-            <div class="iconInfo">
-                <img src="img/icon-info.svg" alt="info icon">
+                <h4 class="popupCalculatorHeader">Obliczyć koszt</h4>
+                <p class="popupCalculatorTxt">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
+
             </div>
 
             <div class="popupCalculatorRange">
-                <input type="range" id="elConsumption" name="Annual_electricity_consumption"
-                       min="0" max="126600" step="100">
+
+                <div class="calculatorRangeBody">
+
+                    <div class="iconInfoBody">
+                        <p>Roczne zużycie energii elektrycznej</p>
+
+                        <div class="iconInfo">
+                            <img src="img/icon-info.svg" alt="info icon">
+                        </div>
+                    </div>
+
+                    <div>
+                    <span>42 200 kWh</span>
+                    </div>
+
+                </div>
+
+                <div class="Range">
+                    <input type="range" id="elConsumption" name="Annual_electricity_consumption"
+                        min="0" max="126600" step="100">
+                </div>
+
             </div>
 
             <div class="dropDownList">
@@ -153,25 +207,30 @@
 
             </div>
 
-            <div class="btnCalculate">
-                <button>Obliczyć</button>
-            </div>
+            <div class="calculateButton">
+                <button class="calcBtn">
+                    <a href="#">Obliczyć</a>
+                </button>
 
         </section>
 
         <section class="popupQuestion">
-
-            <div class="iconCloseWhite">
-                <img src="img/icon-close-white.svg" alt="close icon">
-            </div>
             
             <div class="questionInfo">
+
+                <div class="iconCloseWhite">
+                    <img src="img/icon-close-white.svg" alt="close icon">
+                </div>
+
                 <p class="questionInfoTxt">Przybliżony koszt:</p>
                 <span class="questionInfoSum">40 000 zł</span>
 
-                <div class="returnCalculatorBtn">
-                    <button>Przeliczyć</button>
+                <div class="returnCalculatorButton">
+                    <button class="returnCalculatorBtn">
+                        <a href="#">Przeliczyć</a>
+                    </button>
                 </div>
+
             </div>
 
             <div class="question">
@@ -197,7 +256,9 @@
                     </div>
 
                 
-                    <input class="questionBtn" type="submit" name="questionButton" id="questionButton" value="Wysłać prośbę">
+                    <div class="questionButton">
+                        <input class="questionBtn" type="submit" name="questionButton" id="questionButton" value="Wysłać prośbę">
+                    </div>
 
                 </form>
 
@@ -218,9 +279,11 @@
             <h4 class="feedbackHeader">Dziękuję za twoją prośbę</h4>
             <p class="feedbackTxt">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
 
-            <form class="feedbackBtn">
-                <input type="submit" value="Ok">
-            </form>
+            <div class="feedbackButton">
+                <form class="feedbackBtn">
+                    <input type="submit" value="Ok">
+                </form>
+            </div>
 
         </section>
 
