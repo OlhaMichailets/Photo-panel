@@ -297,6 +297,7 @@ ul {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 94px;
     padding-left: 58px;
     padding-right: 58px;
 }
@@ -415,6 +416,7 @@ select > option {
 .calcBtn a:hover {
     color: #FFFFFF;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    font-weight: 700;
 }
 
 
@@ -422,9 +424,9 @@ select > option {
 
 .popupQuestion {
     width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 97px;
 }
+
 .questionInfo {
     background-color: #FF7129;
 }
@@ -441,11 +443,18 @@ select > option {
     color: #FFFFFF;
 }
 
+.questionInfoBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
 .questionInfoSum{
     color: #FFFFFF;
     margin-left: 58px;
     font-size: 48px;
-    font-weight: bold;
+    line-height: 58px;
+    font-weight: 700;
+    padding-bottom: 72px;
 }
 
 .returnCalculatorButton {
@@ -453,7 +462,6 @@ select > option {
     height: 49px;
     background-color: #FFFFFF;
     text-align: center;
-    float: right;
     margin-right: 58px;
 }
 
@@ -466,18 +474,39 @@ select > option {
 .returnCalculatorBtn a {
     text-decoration: none;
     color: #FF7129;
+    font-weight: 700;
 }
 
 .questionHeader {
     margin-top: 72px;
-    margin-left: 75px;
+    margin-left: 58px;
     font-size: 36px;
+    line-height: 44px;
     font-weight: 700;
+    font-weight: 700;
+    border-left: 1px solid #FF7129;
+    padding-left: 16px;
 }
 
 .questionTxt{
+    margin-top: 16px;
     margin-left: 58px;
     font-weight: 400;
+}
+
+.questionForm {
+    margin: 56px 58px;
+
+}
+
+.questionFormLine,
+.questionFormSecondLine {
+    display: flex;
+    justify-content: space-between;
+}
+
+.questionFormSecondLine {
+    margin-top: 24px;
 }
 
 .userName,
@@ -488,28 +517,38 @@ select > option {
 }
 
 .questionForm label {
-    margin-left: 58px;
+    margin-bottom: 12px;
 }
 
 .questionForm input {
     width: 327px;
     height: 52px;
     margin-top: 7px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
 }
 
-.questionButton{
+.questionButton {
     width: 187px;
     height: 49px;
-    float: right;
-    margin-right: 58px;
+    background-color: #FF7129;
+    border: solid 1px #FF7129;
+    text-align: center;
+    margin-top: 24px;
 }
 
 .questionBtn {
-    
+    border: none;
     background-color: #FF7129;
-    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    padding-top: 16px;
+}
+
+.questionBtn a {
+    text-decoration: none;
     color: #FFFFFF;
-    border: solid 1px #FF7129;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 
@@ -517,7 +556,10 @@ select > option {
 
 .feedback{
     width: 800px;
+    margin: 0 auto 92px;
     background-color: #FF7129;
+    text-align: center;
+    padding-bottom: 72px;
 }
 
 .iconCloseWhite{
@@ -527,41 +569,55 @@ select > option {
 
 .iconCheckMark {
     padding-top: 93px;
-    margin-left: 348px;
+    text-align: center;
 }
 
 .feedbackHeader {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 700;
     color: #FFFFFF;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 24px;
 }
 
 .feedbackTxt {
-    padding-top: 24px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 56px;
 }
 
 .feedbackButton {
     width: 187px;
     height: 49px;
     background-color: #FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
+    border: solid 1px #FFFFFF;
+    margin: 0 auto;
 }
 
 .feedbackBtn {
+    border: none;
+    background-color: #FFFFFF;
+    padding-top: 16px;
     text-align: center;
 }
 
-.feedbackBtn input {
-    border: none;
-    background-color: #fff;
+.feedbackBtn a {
+    text-decoration: none;
     color: #FF7129;
-    margin-top: auto;
-    margin-bottom: auto;
+    font-weight: 700;
+    font-size: 14px;
 }
 
-  
+
+/*callbackSection*/
+
+.callbackSection {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.iconCloseDef {
+    margin-top: 22px;
+    margin-right: 22px;
+}

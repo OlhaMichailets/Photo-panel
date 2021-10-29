@@ -223,13 +223,18 @@
                 </div>
 
                 <p class="questionInfoTxt">Przybliżony koszt:</p>
-                <span class="questionInfoSum">40 000 zł</span>
 
-                <div class="returnCalculatorButton">
-                    <button class="returnCalculatorBtn">
-                        <a href="#">Przeliczyć</a>
-                    </button>
-                </div>
+                <div class="questionInfoBlock">
+
+                    <span class="questionInfoSum">40 000 zł</span>
+
+                    <div class="returnCalculatorButton">
+                        <button class="returnCalculatorBtn">
+                            <a href="#">Przeliczyć</a>
+                        </button>
+                    </div>
+
+            </div>
 
             </div>
 
@@ -240,24 +245,33 @@
 
                 <form class="questionForm" action="URL">
 
-                    <div class="userName">
-                        <label for="userName">Twoje imię</label>
-                        <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+                    <div class="questionFormLine">
+
+                        <div class="userName">
+                            <label for="userName">Twoje imię</label>
+                            <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+                        </div>
+
+                        <div class="questionUserEmail">
+                            <label for="userEmail">E-mail</label>
+                            <input type="text" name="userEmail" id="userEmail" placeholder="Wprowadź mail">
+                        </div>
+
                     </div>
 
-                    <div class="questionUserPhone">
-                        <label for="userPhone">Telefon</label>
-                        <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
-                    </div>
+                    <div class="questionFormSecondLine">
 
-                    <div class="questionUserEmail">
-                        <label for="userEmail">E-mail</label>
-                        <input type="text" name="userEmail" id="userEmail" placeholder="Wprowadź mail">
-                    </div>
+                        <div class="questionUserPhone">
+                            <label for="userPhone">Telefon</label><br>
+                            <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                        </div>
 
-                
-                    <div class="questionButton">
-                        <input class="questionBtn" type="submit" name="questionButton" id="questionButton" value="Wysłać prośbę">
+                        <div class="questionButton">
+                            <button class="questionBtn">
+                                <a href="#">Wysłać prośbę</a>
+                            </button>
+                        </div>
+
                     </div>
 
                 </form>
@@ -280,9 +294,9 @@
             <p class="feedbackTxt">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
 
             <div class="feedbackButton">
-                <form class="feedbackBtn">
-                    <input type="submit" value="Ok">
-                </form>
+                <button class="feedbackBtn">
+                    <a href="#">Ok</a>
+                </button>
             </div>
 
         </section>
