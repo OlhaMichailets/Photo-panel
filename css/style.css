@@ -326,6 +326,23 @@ main section*/
 }
 
 
+/*projects.html
+main section*/
+
+.ProjektyTitleBlock {
+    width: 1600px;
+    padding-top: 125px;
+    margin-left: 200px;
+}
+
+.ProjektyTitle{
+    margin-bottom: 75px;
+    border-left: 1px solid #FF7129;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 47px;
+}
+
 /*popups*/
 
 /*popupCalculator*/
