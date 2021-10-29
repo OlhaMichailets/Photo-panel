@@ -609,7 +609,6 @@ select > option {
     font-size: 14px;
 }
 
-
 /*callbackSection*/
 
 .callbackSection {
@@ -617,7 +616,28 @@ select > option {
     margin: 0 auto;
 }
 
-.iconCloseDef {
+.iconCloseDefault {
     margin-top: 22px;
     margin-right: 22px;
 }
+
+.callback {
+    margin-top: 97px;
+    margin-left: 58px;
+    margin-right: 58px;
+}
+
+.callbackHeader {
+    border-left: 1px solid #FF7129;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 47px;
+    margin-bottom: 19px;
+}
+
+.callbackTxt {
+    font-size: 16px;
+    line-height: 24px;
+}
+

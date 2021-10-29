@@ -303,7 +303,7 @@
 
         <section class="callbackSection">
 
-            <div class="iconCloseDef">
+            <div class="iconCloseDefault">
                 <img src="img/icon-close-default.svg" alt="close icon">
             </div>
 
@@ -313,6 +313,7 @@
             </div>
 
             <form class="callbackForm" action="url">
+
                 <div class="userName">
                     <label for="userName">Twoje imię</label>
                     <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
@@ -323,7 +324,11 @@
                     <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
                 </div>
 
-                <input type="submit" name="callbackBtn" id="callbackBtn" value="Zadzwoń">
+                <div class="callbackButton">
+                    <button class="callbackBtn">
+                        <a type="submit" href="#">Zadzwoń</a>
+                    </button>
+                </div>
 
             </form>
 
