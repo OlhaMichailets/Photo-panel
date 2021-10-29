@@ -4,38 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
     <title>Foton-tech</title>
 </head>
 <body>
 
-    <header>
+    <header class="headerBlock">
 
-        <div>
-            <a href="#"><img src="img/logo.png" alt="Foton-tech logo"></a>
+        <div class="LogoNavBlock">
 
-            <nav>
-                <ul>
-                    <li><a href="#">Strona główna</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Projekty</a></li>
-                    <li><a href="#">Instalacja</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-
-        <div>
-            <address>Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
-
-            <div>
-                <img src="img/icon-mail.svg" alt="mail icon">
-                <a href="mailto: dorotapawezka@gmail">dorotapawezka@gmail.com</a>
+            <div class="logoImgLinkBlock">
+                <a href="#" class="logoImgLink"><img src="img/logo.png" alt="Foton-tech logo"></a>
             </div>
 
-            <div>
-                <img src="img/icon-phone.svg" alt="phone icon">
-                <a href="tel:+48695716531">+48695716531</a>
+            <div class="navBlock">
+                <nav>
+                    <ul class="navList">
+                        <li class="navItem"><a href="#">Strona główna</a></li>
+                        <li class="navItem"><a href="#">O nas</a></li>
+                        <li class="navItem"><a href="#">Projekty</a></li>
+                        <li class="navItem"><a href="#">Instalacja</a></li>
+                        <li class="navItem"><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="contactLine">
+
+            <div class="contactLineBlock">
+
+                <address class="address">Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek</address>
+            
+            </div>
+
+            <div class="contactIcons">
+
+                <div class="iconMail">
+                    <img src="img/icon-mail.svg" alt="mail icon">
+                    <a href="mailto: dorotapawezka@gmail">dorotapawezka@gmail.com</a>
+                </div>
+
+                <div class="iconPhone">
+                    <img src="img/icon-phone.svg" alt="phone icon">
+                    <a href="tel:+48695716531">+48695716531</a>
+                </div>
+
             </div>
 
         </div>
@@ -62,51 +78,74 @@
 
     </main>
 
-    <footer>
+    <footer class="footerContent">
 
-        <div>
-            <a href="#"><img src="img/logo.png" alt="Foton-tech logo"></a>
+        <div class="LogoNavBlock">
 
-            <nav>
-                <ul>
-                    <li><a href="#">Strona główna</a></li>
-                    <li><a href="#">O nas</a></li>
-                    <li><a href="#">Projekty</a></li>
-                    <li><a href="#">Instalacja</a></li>
-                    <li><a href="#">Kontakt</a></li>
-                </ul>
-            </nav>
+            <div class="logoImgLinkBlockFooter">
+                <a href="#" class="logoImgLink"><img src="img/logo.png" alt="Foton-tech logo"></a>
+            </div>
 
-            <button>Oddzwoń</button>
-            
+            <div class="navBlock">
+                <nav>
+                    <ul class="navListFooter">
+                        <li class="navItem"><a href="#">Strona główna</a></li>
+                        <li class="navItem"><a href="#">O nas</a></li>
+                        <li class="navItem"><a href="#">Projekty</a></li>
+                        <li class="navItem"><a href="#">Instalacja</a></li>
+                        <li class="navItem"><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="CallbackButton">
+                <button class="CallbackBtn">
+                    <a class="btnCallbackLink" href="#">Oddzwoń</a>
+                </button> 
+            </div>
+
         </div>
+        
 
-        <div>
+        <div class="intellectProperty">
             <span>Polityka prywatności</span>
             <span>Ochrona danych osobowych</span>
         </div>
 
     </footer>
 
-    <section>
+    <section class="callbackSection">
 
-        <div>
-            <h2>Oddzwoń</h2>
-            <p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+        <div class="iconCloseDefault">
+            <img src="img/icon-close-default.svg" alt="close icon">
         </div>
 
-        <form class="callback" action="url">
-            <div class="userName">
-                <label for="userNameInput">Twoje imię</label>
-                <input type="text" class="userNameInput" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+        <div class="callback">
+            <h2 class="callbackHeader">Oddzwoń</h2>
+            <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+        </div>
+
+        <form class="callbackForm" action="url">
+
+            <div class="contactLineCallBack">
+
+                <div class="userName">
+                    <label for="userName">Twoje imię</label><br>
+                    <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+                </div>
+
+                <div class="questionUserPhone">
+                    <label for="userPhone">Telefon</label><br>
+                    <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                </div>
+
             </div>
 
-            <div class="questionUserPhone">
-                <label for="questionUserPhoneInput">Telefon</label>
-                <input type="text" class="questionUserPhoneInput" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+            <div class="callbackButton">
+                <button class="callbackBtn">
+                    <a type="submit" href="#">Zadzwoń</a>
+                </button>
             </div>
-
-            <input type="submit" name="callbackBtn" id="callbackBtn" value="Zadzwoń">
 
         </form>
 

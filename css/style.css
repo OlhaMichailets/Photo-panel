@@ -29,21 +29,19 @@
 
 /* general conditions*/
 
-
-div, p, span, img, link, button, ul, li {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-}
-
 body {
     font-family: 'Gilroy', sans-serif;
     font-size: 16px;
     font-style: normal;
     color: #20242D;
-    width: 100%;
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto;
     padding: 0;
+}
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 a {
@@ -63,56 +61,51 @@ ul {
 /* header section*/
 
 .headerBlock {
+    width: 1600px;
+    margin: 0 auto;
     display: flex;
-    flex-flow: wrap column;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    flex-direction: column-reverse;
 }
 
 .LogoNavBlock {
-    flex: 1;
-    order: 2;
-    margin-bottom: 0;
-    padding-bottom: 0
-}
-
-.contactLine{
-    flex: 2;
-    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .contactLineBlock {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
+    width: 1600px;
     background-color: #20242D;
     color: #FFFFFF;
-    font-size: 12px;
+
 }
 
 .address{
     font-style: normal;
+    padding-left: 50px;
+    padding-top: 10px;
 }
 
 .contactIcons {
     display: flex;
-    width: 315px;
     justify-content: space-between;
+    padding: 10px 50px;
+}
+
+.iconPhone {
+    padding-left: 56px;
 }
 
 .contactIcons a {
     font-size: 12px;
+    line-height: 14px;
     color: #FFFFFF;
-    margin-left: 10px;
-    padding: 20px 0;
-}
-
-.LogoNavBlock{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
+    padding-left: 10px;
 }
 
 .logoImgLinkBlock{
@@ -127,7 +120,11 @@ ul {
 
 .navList a {
     color: #20242D;
+    font-weight: 600;
     font-size: 14px;
+    line-height: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .navItem:first-child a {
@@ -145,8 +142,7 @@ ul {
 .promoImg {
     background-image: url(../img/bg-mp-main.jpg);
     width: 100%;
-    max-width: 1600px;
-    padding: 0;
+    width: 1600px;
     margin: 0 auto;
 }
 
@@ -490,7 +486,8 @@ select > option {
 
 .questionTxt{
     margin-top: 16px;
-    margin-left: 58px;
+    padding-left: 58px;
+    padding-right: 58px;
     font-weight: 400;
 }
 
@@ -619,15 +616,16 @@ select > option {
 .iconCloseDefault {
     margin-top: 22px;
     margin-right: 22px;
+    float: right;
 }
 
 .callback {
-    margin-top: 97px;
     margin-left: 58px;
     margin-right: 58px;
 }
 
 .callbackHeader {
+    margin-top: 189px;
     border-left: 1px solid #FF7129;
     padding-left: 16px;
     font-weight: 700;
@@ -639,5 +637,58 @@ select > option {
 .callbackTxt {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 64px;
+}
+
+.callbackForm {
+    margin: 64px 58px 72px;
+
+}
+
+.contactLineCallback {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userNameCallback,
+.contacUserPhoneCallback {
+    font-size: 14px;
+    color: #7B7E85;
+}
+
+.callbackForm label {
+    margin-bottom: 12px;
+}
+
+.callbackForm input {
+    width: 327px;
+    height: 52px;
+    margin-top: 7px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+}
+
+.callbackButton {
+    width: 187px;
+    height: 49px;
+    background-color: #FF7129;
+    border: solid 1px #FF7129;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 72px;
+}
+
+.callbackBtn {
+    border: none;
+    background-color: #FF7129;
+    padding-top: 16px;
+}
+
+.callbackBtn a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
 }
 
