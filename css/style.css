@@ -58,7 +58,8 @@ ul {
    }
 
 
-/* header section*/
+/* index.html
+header section*/
 
 .headerBlock {
     width: 1600px;
@@ -282,6 +283,46 @@ ul {
 .intellectProperty span {
     font-size: 12px;
     color: #7B7E85;
+}
+
+
+
+/*about_us.html
+main section*/
+
+.abUs-headerImg{
+    background-image: url(../img/bg-ubUs-main.jpg);
+    margin: 0 auto 80px;
+    width: 1600px;
+    height: 350px;
+}
+
+.abUs-headerImg div {
+    padding-top: 200px;
+}
+
+.abUs-header {
+    margin-left: 200px;
+    padding-left: 16px;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 47px;
+    color: #FFFFFF;
+    border-left: 1px solid #FF7129;
+}
+
+.abUs-text-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 184px;
+}
+
+.abUs-text-lpart,
+.abUs-text-rpart {
+    width: 534px;
+    line-height: 24px;
 }
 
 
