@@ -72,6 +72,7 @@ header section*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -83,11 +84,12 @@ header section*/
     width: 1600px;
     background-color: #20242D;
     color: #FFFFFF;
-
+    align-content: center;
 }
 
 .address{
     font-style: normal;
+    font-size: 12px;
     padding-left: 50px;
     padding-top: 10px;
 }
@@ -142,7 +144,6 @@ header section*/
 
 .promoImg {
     background-image: url(../img/bg-mp-main.jpg);
-    width: 100%;
     width: 1600px;
     margin: 0 auto;
 }
@@ -165,38 +166,29 @@ header section*/
 
 .goCalcButton {
     text-align: center;
-    margin-bottom: 106px;
+    margin: 0 auto 106px;
+    width: 187px;
+    height: 35px;
+    border: solid 1px #FF7129;
+    background-color: #FF7129;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    padding-top: 16px;
 }
 
 .goCalcButton:hover {
     text-align: center;
-    margin-bottom: 106px;
-}
-
-.goCalcBtn {
-    width: 187px;
-    height: 49px;
-    border: solid 1px #FF7129;
-    background-color: #FF7129;
-    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 14px;
-}
-
-.goCalcBtn:hover {
-    text-align: center;
-    width: 187px;
-    height: 49px;
+    margin: 0 auto 106px;
     background-color: #D35E22;
-    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
     border: solid 1px #D35E22;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
 }
 
-.goCalcBtn a,
-.goCalcBtn a:hover {
-    color: #FFFFFF;
+.goCalcButton a,
+.goCalcButton a:hover {
+    text-decoration: none;
+    color: #FFFFFF !important;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .scrollImg{
@@ -257,25 +249,31 @@ header section*/
     
 }
 
-.CallbackBtn {
+.CallbackButton {
     width: 187px;
-    height: 49px;
-    border: solid #FF7129;
-    background-color: #20242D;
-    margin-top: 50px;
+    height: 35px;
+    border: 1px solid #FF7129;
+    text-align: center;
+    padding-top: 16px;
 }
 
-.CallbackBtn a{
+.CallbackButton a{
     color: #FFFFFF;
+    font-weight: 700;
     background-color: #20242D;
     font-size: 14px;
-    text-align: center;
-    margin: 0%;
+}
+
+.grayLine {
+    border-bottom: 1px solid #7B7E85;
+    opacity: 0.3;
+    margin: 45px auto 0;
+    width: 1500px;
 }
 
 .intellectProperty {
     width: 100%-100px;
-    margin-top: 77px;
+    margin-top: 24px;
     padding: 0 50px 24px;
     display: flex;
     justify-content: space-between;
@@ -727,26 +725,19 @@ select > option {
     box-sizing: border-box;
 }
 
-.callbackButton {
+.CallbackButton 123 {
     width: 187px;
     height: 49px;
-    background-color: #FF7129;
     border: solid 1px #FF7129;
     text-align: center;
-    margin-top: 24px;
-    margin-bottom: 72px;
+    
 }
 
-.callbackBtn {
-    border: none;
-    background-color: #FF7129;
-    padding-top: 16px;
-}
-
-.callbackBtn a {
+.CallbackButton 123 a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 14px;
+    padding-top: 16px;
 }
 
