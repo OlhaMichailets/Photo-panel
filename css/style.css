@@ -109,6 +109,7 @@ header section*/
     line-height: 14px;
     color: #FFFFFF;
     padding-left: 10px;
+    padding-top: 10px;    
 }
 
 .logoImgLinkBlock{
@@ -143,9 +144,33 @@ header section*/
 }
 
 .promoImg {
-    background-image: url(../img/bg-mp-main.jpg);
+    background-image:
+    radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0.3%, #20242D 100%),
+    url('../img/bg-mp-main.jpg');
     width: 1600px;
     margin: 0 auto;
+}
+
+.backgroundText span {
+    position: absolute;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 145px;
+    text-transform: uppercase;
+    opacity: 0.3;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+
+.backgroundText span:first-child {
+    margin-top: 167px;
+    margin-left: 50px;
+}
+
+.backgroundText span:nth-child(2) {
+    margin-top: 417px;
+    margin-left: 1106px;
 }
 
 .promoHeader {
@@ -205,6 +230,10 @@ header section*/
     margin: 132px auto 115px auto;
     display: flex;
     justify-content: space-around;
+}
+
+.promoBgImage{
+    
 }
 
 .promoContentTxt h2 {
