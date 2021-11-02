@@ -94,11 +94,18 @@
 
         <section class="promoContent">
 
+            <div class="promoContentBgImg"></div>
+
             <div class="promoContentImg">
                 <img src="img/mp-main.jpg" width="600px" height="600px" alt="image of house with solar panels">
             </div>
 
             <div class="promoContentTxt">
+
+                <div class="promoContentBgTxt">
+                    <span>Info</span>
+                </div>
+
                 <h2>Ty i twói dom</h2>
                 <p>Zrównoważony rozwój zaczyna się w domu od Ciebie i Twojej rodziny.
                 Codzienne dokonywane przez ciebie wybory - zarówno duże, jak i małe mają ogromny wpływ na środowisko.</p>
@@ -157,7 +164,7 @@
             </div>
 
             <div class="popupCalculatorTitle">
-
+                <span>Calculator</span>
                 <h4 class="popupCalculatorHeader">Obliczyć koszt</h4>
                 <p class="popupCalculatorTxt">Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
 
@@ -170,9 +177,9 @@
                     <div class="iconInfoBody">
                         <p>Roczne zużycie energii elektrycznej</p>
 
-                        <div class="iconInfo">
-                            <img src="img/icon-info.svg" alt="info icon">
-                        </div>
+                        <a class="iconInfo"></a>
+                        <p class="InfoTextHint">Istnieją trzy główne typy paneli słonecznych: monokrystaliczne krzemowe panele słoneczne, polikrystaliczne krzemowe panele słoneczne i cienkowarstwowe ogniwa słoneczne. Istnieją trzy główne typy paneli słonecznych: monokrystaliczne krzemowe panele.</p>
+                        <div class="triangle_down"></div>
                     </div>
 
                     <div>
@@ -181,10 +188,16 @@
 
                 </div>
 
-                <div class="Range">
+                <div class="rangeLine">
+                    <div class="rangeLineFull"></div>
+                    <div class="rangeManipulator"></div>
+                    <div class="rangeLineEmpty"></div>
+                </div>
+
+                <!-- <div class="Range">
                     <input type="range" id="elConsumption" name="Annual_electricity_consumption"
                         min="0" max="126600" step="100">
-                </div>
+                </div> -->
 
             </div>
 
@@ -212,10 +225,13 @@
 
             </div>
 
-            <div class="calculateButton">
-                <button class="calcBtn">
+            <div class="calculateButtonPadding">
+
+                <div class="calculateButton">
                     <a href="#">Obliczyć</a>
-                </button>
+                </div>
+
+            </div>
 
         </section>
 

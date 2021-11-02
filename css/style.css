@@ -226,14 +226,30 @@ header section*/
 
 
 .promoContent{
-    width: 1200px;
+    width: 1600px;
     margin: 132px auto 115px auto;
     display: flex;
     justify-content: space-around;
+    position: relative;
 }
 
-.promoBgImage{
-    
+.promoContentBgImg{
+    background: url('../img/bg-mp-drawing.png') no-repeat 0 0;
+    width: 535px;
+    margin-top: -33px;
+}
+
+.promoContentBgTxt {
+    position: absolute;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    text-transform: uppercase;
+    opacity: 0.1;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:  #20242D;
+    margin-left: 37px;
 }
 
 .promoContentTxt h2 {
@@ -274,8 +290,7 @@ header section*/
 
 .navListFooter a{
     color: #FFFFFF;
-    font-size: 14px;
-    
+    font-size: 14px;  
 }
 
 .CallbackButton {
@@ -372,26 +387,48 @@ main section*/
 
 /*popups*/
 
+.popup {
+    background-color: #20242D;
+    opacity: 0.9;
+    padding-top: 225px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /*popupCalculator*/
 
 .popupCalculator{
     width: 800px;
+    background-color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 94px;
-    padding-left: 58px;
-    padding-right: 58px;
+    margin-bottom: 225px;
+    position: relative;
 }
 
 .popupCalculatorImg {
-    float: right;
-    margin-top: 22px;
-    margin-right: 22px;
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
+.popupCalculatorTitle span {
+    position: absolute;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    text-transform: uppercase;
+    opacity: 0.1;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:  #20242D;
+    margin-left: 26px;
 }
 
 .popupCalculatorTitle {
-    padding-top: 97px;
-    
+    padding-top: 60px;
 }
 
 .popupCalculatorHeader{
@@ -418,8 +455,8 @@ main section*/
 .iconInfoBody{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
 
 .popupCalculatorRange p{
     font-size: 12px;
@@ -428,10 +465,81 @@ main section*/
 }
 
 .iconInfo {
-   margin-left: 11px;
+    background-image: url('../img/icon-info.svg');
+    width: 10px;
+    height: 10px;
+    margin-left: 11px;
 }
 
-.popupCalculatorRange span {
+.iconInfo:hover {
+    background-image: url('../img/icon-info-hover.svg');
+    width: 10px;
+    height: 10px;
+    margin-left: 11px;
+}
+
+.InfoTextHint {
+    position: absolute;
+    width: 414px;
+    padding: 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.11);
+    top: 170px;
+    left: 185px;
+    visibility:hidden;
+}
+
+.triangle_down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 13px solid #FFFFFF;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: 297px;
+    left: 315px;
+    visibility:hidden;
+}
+
+.iconInfo:hover +.InfoTextHint {
+    visibility: visible;
+}
+
+.iconInfo:hover +.triangle_down {
+    visibility: visible;
+}
+
+.rangeLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.rangeLineFull {
+    width: 200px;
+    height: 6px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background: linear-gradient(90deg, #5CD35A 55%, #FF8D24 80%, #F01717 150%);
+}
+
+.rangeManipulator {
+    width: 8px;
+    height: 8px;
+    border: 8px solid #FF7129;
+    border-radius: 50%;
+    box-shadow: 0px 4px 17px rgba(255, 113, 41, 0.29);
+}
+
+.rangeLineEmpty {
+    width: 460px;
+    height: 6px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #F2F2F2;
+}
+
+/* .popupCalculatorRange span {
     font-weight: 600;
     float: right;
     margin-left: 58px;
@@ -440,18 +548,18 @@ main section*/
 .Range {
     margin-left: 58px;
     width: 682px;
-}
+} */
 
 .dropDownList {
+    margin-left: 58px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .worldSideHeader,
 .roofMaterialHeader {
     font-size: 14px;
     color: #7B7E85;
-    margin-left: 58px;
 }
 
 .worldSideList,
@@ -461,47 +569,55 @@ main section*/
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
     margin-top: 7px;
-    margin-left: 58px;
-}
-
-select > option {
-    color: #7B7E85;
-    padding-top: 16px;
+    margin-bottom: 56px;
+    align-items: center;
     padding-left: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7E85;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    background: url('../img/select-arrow.svg') no-repeat;
+    background-position: 90% 50%;
 }
 
-.calculateButton{
+.calculateButton {
     text-align: center;
-    margin-top: 56px;
-    padding-bottom: 72px;
-}
-
-.calculateButton:hover{
-    color: #D35E22;
-    margin-top: 56px;
-    padding-bottom: 72px;
-}
-
-.calcBtn {
+    margin: 0 auto;
     width: 187px;
-    height: 49px;
-    border: solid #FF7129;
+    height: 35px;
+    border: solid 1px #FF7129;
     background-color: #FF7129;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    padding-top: 16px;
+}
+
+.calculateButton:hover {
     text-align: center;
-    color: #FFFFFF;
-    font-size: 14px;
+    margin: 0 auto;
+    background-color: #D35E22;
+    border: solid 1px #D35E22;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
 }
 
-.calcBtn a,
-.calcBtn a:hover {
-    color: #FFFFFF;
-    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+.calculateButton a,
+.calculateButton a:hover {
+    text-decoration: none;
+    color: #FFFFFF !important;
     font-weight: 700;
+    font-size: 14px;
+}
+
+.calculateButtonPadding {
+    padding-bottom: 72px;
 }
 
 
 /*popupQuestion*/
+
+
 
 .popupQuestion {
     width: 800px;
@@ -754,7 +870,7 @@ select > option {
     box-sizing: border-box;
 }
 
-.CallbackButton 123 {
+/* .CallbackButton 123 {
     width: 187px;
     height: 49px;
     border: solid 1px #FF7129;
@@ -768,5 +884,5 @@ select > option {
     font-weight: 700;
     font-size: 14px;
     padding-top: 16px;
-}
+} */
 
