@@ -408,7 +408,7 @@ main section*/
     position: relative;
 }
 
-.popupCalculatorImg {
+.popCalcCloseIcon {
     position: absolute;
     top: 22px;
     right: 22px;
@@ -583,6 +583,13 @@ main section*/
     background-position: 90% 50%;
 }
 
+.worldSideList:hover,
+.roofMaterialList:hover {
+    border: 1px solid #FF7129;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 9px rgba(255, 113, 41, 0.18);
+}
+
 .calculateButton {
     text-align: center;
     margin: 0 auto;
@@ -618,7 +625,6 @@ main section*/
 /*popupQuestion*/
 
 
-
 .popupQuestion {
     width: 800px;
     margin: 0 auto 97px;
@@ -626,12 +632,13 @@ main section*/
 
 .questionInfo {
     background-color: #FF7129;
+    position: relative;
 }
 
-.iconCloseWhite {
-    float: right;
-    margin-top: 22px;
-    margin-right: 22px;
+.popQuestCloseIcon {
+    position: absolute;
+    top: 22px;
+    right: 22px;
 }
 
 .questionInfoTxt {
@@ -643,11 +650,11 @@ main section*/
 .questionInfoBlock {
     display: flex;
     justify-content: space-between;
+    margin: 0 58px;
 }
 
 .questionInfoSum{
     color: #FFFFFF;
-    margin-left: 58px;
     font-size: 48px;
     line-height: 58px;
     font-weight: 700;
@@ -655,23 +662,40 @@ main section*/
 }
 
 .returnCalculatorButton {
-    width: 187px;
-    height: 49px;
-    background-color: #FFFFFF;
     text-align: center;
-    margin-right: 58px;
-}
-
-.returnCalculatorBtn {
-    border: none;
-    background-color: #FFFFFF;
     padding-top: 16px;
+    width: 187px;
+    height: 35px;
+    border: solid 1px #FFFFFF;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
 }
 
-.returnCalculatorBtn a {
+.returnCalculatorButton:hover {
+    text-align: center;
+    color: #FFFFFF;
+    background: #20242D;
+    border: solid 1px #20242D;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+}
+
+.returnCalculatorButton a {
     text-decoration: none;
     color: #FF7129;
     font-weight: 700;
+    font-size: 14px;
+}
+
+.returnCalculatorButton a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.question {
+    background-color: #FFFFFF;
+    padding-top: 72px;
 }
 
 .questionHeader {
@@ -694,6 +718,7 @@ main section*/
 
 .questionForm {
     margin: 56px 58px;
+    padding-bottom: 72px;
 
 }
 
@@ -716,6 +741,9 @@ main section*/
 
 .questionForm label {
     margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7B7E85;
 }
 
 .questionForm input {
@@ -725,30 +753,47 @@ main section*/
     background-color: #FFFFFF;
     border: 1px solid #E0E0E0;
     box-sizing: border-box;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #7B7E85;
+    padding-left: 24px;
 }
 
-.questionButton {
+.questionForm input:hover {
+    border: 1px solid #FF7129;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 9px rgba(255, 113, 41, 0.18);
+}
+
+.questionForm input:focus {
+    outline: 1px solid #FF7129;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 9px rgba(255, 113, 41, 0.18);
+    color: #20242D;
+}
+
+.questionButton{
+    padding-top: 17px;
+}
+
+.questionButton input {
+    text-align: center;
+    align-items: center;
     width: 187px;
     height: 49px;
-    background-color: #FF7129;
     border: solid 1px #FF7129;
-    text-align: center;
-    margin-top: 24px;
-}
-
-.questionBtn {
-    border: none;
     background-color: #FF7129;
-    padding-top: 16px;
-}
-
-.questionBtn a {
-    text-decoration: none;
-    color: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    color: #FFFFFF !important;
     font-weight: 700;
     font-size: 14px;
 }
 
+.questionButton input:hover {
+    background: #D35E22;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+}
 
 /*feedback*/
 
