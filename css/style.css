@@ -333,14 +333,30 @@ header section*/
 main section*/
 
 .abUs-headerImg{
-    background-image: url(../img/bg-ubUs-main.jpg);
+    background-image:
+    radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0.3%, #20242D 100%), url(../img/bg-ubUs-main.jpg);
     margin: 0 auto 80px;
     width: 1600px;
     height: 350px;
 }
 
+.BgImageAbUs {
+    position: absolute;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 145px;
+    text-transform: uppercase;
+    opacity: 0.3;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFFFF;
+    top: 115px;
+    left: 137px;
+}
+
 .abUs-headerImg div {
     padding-top: 200px;
+    position: relative;
 }
 
 .abUs-header {
@@ -359,6 +375,13 @@ main section*/
     margin-left: 200px;
     margin-right: 200px;
     margin-bottom: 184px;
+    position: relative;
+}
+
+.AbUsBgImgText {
+    background-image: url('../img/bg-mp-drawing1.png') no-repeat 0 0;
+    width: 535px;
+    position: absolute;
 }
 
 .abUs-text-lpart,
@@ -384,6 +407,105 @@ main section*/
     font-size: 48px;
     line-height: 47px;
 }
+
+
+/*contact page*/
+
+.ContactPage {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #EFF1F5;
+}
+
+.ContactInfo {
+    border-left: 1px solid #EFF1F5;
+    margin-left: 200px;
+    border-right: 1px solid #EFF1F5;
+    padding-right: 150px;
+    padding-bottom: 120px;
+}
+
+.ContactPageName {
+    
+    padding-top: 125px;
+}
+
+.ContactPageName span {
+    position: absolute;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    text-transform: uppercase;
+    opacity: 0.3;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #20242D;
+    margin-top: -25px;
+    margin-left: -27px;
+}
+
+.ContactPageName h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 47px;
+    color: #20242D;
+    border-left: 1px solid #FF7129;
+    padding-left: 16px;
+    margin-bottom: 178px;
+}
+
+.ContactContent h3 {
+    font-size: 16px;
+    line-height: 19px;
+    color: #7B7E85;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+.contactAdresLine div,
+.contactEmailLine div,
+.contactPhonelLine div {
+    display: inline-block;
+    margin-bottom: 54px;
+}
+
+.contactAdresLine img,
+.contactEmailLine img,
+.contactPhonelLine img {
+    margin-right: 10px;
+}
+
+.contactEmailLine a,
+.contactPhonelLine a {
+    text-decoration: none;
+    color: #20242D;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.map {
+    border-right: 1px solid rgba(123, 126, 133, 0.15);
+    margin-right: 200px;
+    position: relative;
+}
+
+.mapImg {
+    position: absolute;
+    bottom: 0;
+    right: -200px;
+}
+
+.locationVector {
+    background: url('../img/icon-location-map.svg'), no-repeat;
+    position: relative;
+    width: 42px;
+    height: 51px;
+    top: 610px;
+    left: -190px;
+}
+
+
+
 
 /*popups*/
 

@@ -64,6 +64,8 @@
 
             <div>
 
+                <span class="BgImageAbUs">About</span>
+
                 <h1 class="abUs-header">O nas</h1>
 
             </div>
@@ -71,6 +73,8 @@
         </div>
 
         <div class="abUs-text-container">
+
+            <div class="AbUsBgImgText"></div>
 
             <div class="abUs-text-lpart">
                 <p>Jako firma Foton-Tech zapewniamy kompleksową obsługę od zaprojektowania systemu poprzez dostarczanie urządzeń po ich instalację oraz przyłączenie do sieci.</p>
@@ -107,12 +111,12 @@
             </div>
 
             <div class="CallbackButton">
-                <button class="CallbackBtn">
-                    <a class="btnCallbackLink" href="#">Oddzwoń</a>
-                </button> 
+                <a href="#">Oddzwoń</a>
             </div>
 
         </div>
+
+        <div class="grayLine"></div>
         
 
         <div class="intellectProperty">
@@ -122,40 +126,46 @@
 
     </footer>
 
-    <section class="callbackSection">
+    <section class="popup">
 
-        <div class="iconCloseDefault">
-            <img src="img/icon-close-default.svg" alt="close icon">
-        </div>
+        <section class="callbackSection">
 
-        <div class="callback">
-            <h2 class="callbackHeader">Oddzwoń</h2>
-            <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
-        </div>
+            <div class="padding"></div>
 
-        <form class="callbackForm" action="url">
-
-            <div class="contactLineCallback">
-
-                <div class="userNameCallback">
-                    <label for="userName">Twoje imię</label>
-                    <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
-                </div>
-
-                <div class="contacUserPhoneCallback">
-                    <label for="userPhone">Telefon</label>
-                    <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
-                </div>
-
+            <div class="iconCloseDefault">
+                <img src="img/icon-close-default.svg" alt="close icon">
             </div>
 
-            <div class="callbackButton">
-                <button class="callbackBtn">
-                    <a type="submit" href="#">Zadzwoń</a>
-                </button>
+            <div class="callback">
+                <span>Callback</span>
+                <h2 class="callbackHeader">Oddzwoń</h2>
+                <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
             </div>
 
-        </form>
+            <form class="callbackForm" action="url">
+
+                <div class="contactLineCallback">
+
+                    <div class="userNameCallback">
+                        <label for="userName">Twoje imię</label>
+                        <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+                    </div>
+
+                    <div class="contacUserPhoneCallback">
+                        <label for="userPhone">Telefon</label>
+                        <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                    </div>
+
+                </div>
+
+                <div class="callbackButton">
+                    <input type="submit" value="Zadzwoń">
+                    </button>
+                </div>
+
+            </form>
+
+        </section>
 
     </section>
     
