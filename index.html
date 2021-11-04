@@ -78,7 +78,7 @@
 
                     <div class="goCalcButton">
 
-                        <a href="#">Obliczyć koszt</a>
+                        <a class="goCalcButtonLink" href="#">Obliczyć koszt</a>
         
                     </div>
 
@@ -155,15 +155,12 @@
 
 
 
-    <section class="popup">
+    <div class="popup popupCalculator">
 
-
-
-
-        <section class="popupCalculator">
+        <div class="popupCalculatorBody">
 
             <div class="popCalcCloseIcon">
-                <img src="img/icon-close-default.svg" alt="close icon">
+                <a href="http://127.0.0.1:5500/index.html"><img src="img/icon-close-default.svg" alt="close icon"></a>
             </div>
 
             <div class="popupCalculatorTitle">
@@ -236,131 +233,131 @@
 
             </div>
 
-        </section>
+        </div>
 
+    </div>
 
+    <div class="popup popupQuestion">
+        
+        <div class="questionInfo">
 
-        <section class="popupQuestion">
-            
-            <div class="questionInfo">
-
-                <div class="popQuestCloseIcon">
-                    <img src="img/icon-close-white.svg" alt="close icon">
-                </div>
-
-                <p class="questionInfoTxt">Przybliżony koszt:</p>
-
-                <div class="questionInfoBlock">
-
-                    <span class="questionInfoSum">40 000 zł</span>
-
-                    <div class="returnCalculatorButton">
-                        <a href="#">Przeliczyć</a>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="question">
-
-                <h4 class="questionHeader">Jakieś pytania?</h4>
-                <p class="questionTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
-
-                <form class="questionForm" action="URL">
-
-                    <div class="questionFormLine">
-
-                        <div class="userName">
-                            <label for="userName">Twoje imię</label>
-                            <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
-                        </div>
-
-                        <div class="questionUserEmail">
-                            <label for="userEmail">E-mail</label>
-                            <input type="text" name="userEmail" id="userEmail" placeholder="Wprowadź mail">
-                        </div>
-
-                    </div>
-
-                    <div class="questionFormSecondLine">
-
-                        <div class="questionUserPhone">
-                            <label for="userPhone">Telefon</label><br>
-                            <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
-                        </div>
-
-                        <div class="questionButton">
-                            <input type="submit" value="Wysłać prośbę">
-                        </div>
-
-                    </div>
-
-                </form>
-
-            </div>
-
-        </section>
-
-        <section class="feedback">
-
-            <div class="iconCloseWhite">
+            <div class="popQuestCloseIcon">
                 <img src="img/icon-close-white.svg" alt="close icon">
             </div>
 
-            <div class="iconCheckMark">
-                <img src="img/icon-checkMark.svg" alt="check mark icon">
+            <p class="questionInfoTxt">Przybliżony koszt:</p>
+
+            <div class="questionInfoBlock">
+
+                <span class="questionInfoSum">40 000 zł</span>
+
+                <div class="returnCalculatorButton">
+                    <a href="#">Przeliczyć</a>
+                </div>
+
             </div>
 
-            <h4 class="feedbackHeader">Dziękuję za twoją prośbę</h4>
-            <p class="feedbackTxt">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
+        </div>
 
-            <div class="feedbackButton">
-                <a href="#">Ok</a>
-            </div>
+        <div class="question">
 
-        </section>
+            <h4 class="questionHeader">Jakieś pytania?</h4>
+            <p class="questionTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>
 
-        <section class="callbackSection">
+            <form class="questionForm" action="URL">
 
-            <div class="padding"></div>
+                <div class="questionFormLine">
 
-            <div class="iconCloseDefault">
-                <img src="img/icon-close-default.svg" alt="close icon">
-            </div>
-
-            <div class="callback">
-                <span>Callback</span>
-                <h2 class="callbackHeader">Oddzwoń</h2>
-                <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
-            </div>
-
-            <form class="callbackForm" action="url">
-
-                <div class="contactLineCallback">
-
-                    <div class="userNameCallback">
+                    <div class="userName">
                         <label for="userName">Twoje imię</label>
                         <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
                     </div>
 
-                    <div class="contacUserPhoneCallback">
-                        <label for="userPhone">Telefon</label>
-                        <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                    <div class="questionUserEmail">
+                        <label for="userEmail">E-mail</label>
+                        <input type="text" name="userEmail" id="userEmail" placeholder="Wprowadź mail">
                     </div>
 
                 </div>
 
-                <div class="callbackButton">
-                    <input type="submit" value="Zadzwoń">
-                    </button>
+                <div class="questionFormSecondLine">
+
+                    <div class="questionUserPhone">
+                        <label for="userPhone">Telefon</label><br>
+                        <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                    </div>
+
+                    <div class="questionButton">
+                        <input type="submit" value="Wysłać prośbę">
+                    </div>
+
                 </div>
 
             </form>
 
-        </section>
+        </div>
 
-    </section>
+    </div>
+
+    <div class="popup feedback">
+
+        <div class="iconCloseWhite">
+            <img src="img/icon-close-white.svg" alt="close icon">
+        </div>
+
+        <div class="iconCheckMark">
+            <img src="img/icon-checkMark.svg" alt="check mark icon">
+        </div>
+
+        <h4 class="feedbackHeader">Dziękuję za twoją prośbę</h4>
+        <p class="feedbackTxt">Nasz menedżer wkrótce się z Tobą skontaktuje</p>
+
+        <div class="feedbackButton">
+            <a href="#">Ok</a>
+        </div>
+
+    </div>
+
+    <div class="popup callbackSection">
+
+        <div class="padding"></div>
+
+        <div class="iconCloseDefault">
+            <img src="img/icon-close-default.svg" alt="close icon">
+        </div>
+
+        <div class="callback">
+            <span>Callback</span>
+            <h2 class="callbackHeader">Oddzwoń</h2>
+            <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
+        </div>
+
+        <form class="callbackForm" action="url">
+
+            <div class="contactLineCallback">
+
+                <div class="userNameCallback">
+                    <label for="userName">Twoje imię</label>
+                    <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+                </div>
+
+                <div class="contacUserPhoneCallback">
+                    <label for="userPhone">Telefon</label>
+                    <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                </div>
+
+            </div>
+
+            <div class="callbackButton">
+                <input type="submit" value="Zadzwoń">
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
     
+    <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -149,6 +149,7 @@ header section*/
     url('../img/bg-mp-main.jpg');
     width: 1600px;
     margin: 0 auto;
+    position: relative;
 }
 
 .backgroundText span {
@@ -505,28 +506,40 @@ main section*/
 }
 
 
-
-
-/*popups*/
+/*popup*/
 
 .popup {
     background-color: #20242D;
     opacity: 0.9;
     padding-top: 225px;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+
+.popupShow {
+    display: block;
+    position: fixed;
+
 }
 
 /*popupCalculator*/
 
-.popupCalculator{
+/* .popupCalculator-show {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.popupCalculatorBody{
     width: 800px;
-    background-color: #FFFFFF;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 225px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: auto auto;
     position: relative;
 }
 
