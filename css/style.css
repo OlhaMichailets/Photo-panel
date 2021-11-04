@@ -57,6 +57,13 @@ ul {
     padding-left: 0;
    }
 
+.buttonCloseIcon {
+    box-sizing: border-box;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
 
 /* index.html
 header section*/
@@ -191,14 +198,19 @@ header section*/
 }
 
 .goCalcButton {
+    display: block;
+    position: relative;
     text-align: center;
+    align-items: center;
     margin: 0 auto 106px;
     width: 187px;
-    height: 35px;
+    height: 49px;
     border: solid 1px #FF7129;
     background-color: #FF7129;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
-    padding-top: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .goCalcButton:hover {
@@ -207,12 +219,7 @@ header section*/
     background-color: #D35E22;
     border: solid 1px #D35E22;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
-}
-
-.goCalcButton a,
-.goCalcButton a:hover {
-    text-decoration: none;
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 14px;
 }
@@ -294,18 +301,23 @@ header section*/
     font-size: 14px;  
 }
 
-.CallbackButton {
+.callbackButton {
     width: 187px;
-    height: 35px;
+    height: 49px;
     border: 1px solid #FF7129;
     text-align: center;
-    padding-top: 16px;
-}
-
-.CallbackButton a{
     color: #FFFFFF;
     font-weight: 700;
     background-color: #20242D;
+    font-size: 14px;
+}
+
+.callbackButton:hover {
+    border: 1px solid #FF7129;
+    text-align: center;
+    color: #FFFF;
+    font-weight: 700;
+    background-color: #FF7129;
     font-size: 14px;
 }
 
@@ -509,8 +521,7 @@ main section*/
 /*popup*/
 
 .popup {
-    background-color: #20242D;
-    opacity: 0.9;
+    background-color: rgba(32, 36, 45, 0.9);
     padding-top: 225px;
     top: 50%;
     left: 50%;
@@ -523,7 +534,6 @@ main section*/
 .popupShow {
     display: block;
     position: fixed;
-
 }
 
 /*popupCalculator*/
@@ -541,6 +551,7 @@ main section*/
     background-color: rgba(255, 255, 255, 1);
     margin: auto auto;
     position: relative;
+    padding-bottom: 72px;
 }
 
 .popCalcCloseIcon {
@@ -715,43 +726,45 @@ main section*/
 }
 
 .calculateButton {
+    display: block;
+    position: relative;
     text-align: center;
+    align-items: center;
     margin: 0 auto;
     width: 187px;
-    height: 35px;
+    height: 49px;
     border: solid 1px #FF7129;
     background-color: #FF7129;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
-    padding-top: 16px;
-}
-
-.calculateButton:hover {
-    text-align: center;
-    margin: 0 auto;
-    background-color: #D35E22;
-    border: solid 1px #D35E22;
-    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
-}
-
-.calculateButton a,
-.calculateButton a:hover {
-    text-decoration: none;
-    color: #FFFFFF !important;
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 14px;
 }
 
-.calculateButtonPadding {
-    padding-bottom: 72px;
+.calculateButton:hover {
+    display: block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #D35E22;
+    border: solid 1px #D35E22;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 
 /*popupQuestion*/
 
 
-.popupQuestion {
+.popupQuestionBody {
     width: 800px;
-    margin: 0 auto 97px;
+    background-color: rgba(255, 255, 255, 1);
+    margin: auto auto;
+    position: relative;
+    padding-bottom: 72px;
 }
 
 .questionInfo {
@@ -786,6 +799,34 @@ main section*/
 }
 
 .returnCalculatorButton {
+    display: block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    width: 187px;
+    height: 49px;
+    border: solid 1px #FFFFFF;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    color: #FF7129;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.returnCalculatorButton:hover {
+    display: block;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    background-color: #20242D;
+    border: solid 1px #20242D;
+    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* .returnCalculatorButton {
     text-align: center;
     padding-top: 16px;
     width: 187px;
@@ -815,7 +856,7 @@ main section*/
     color: #FFFFFF;
     font-weight: 700;
     font-size: 14px;
-}
+} */
 
 .question {
     background-color: #FFFFFF;
@@ -897,11 +938,11 @@ main section*/
     color: #20242D;
 }
 
-.questionButton{
+.questionBtnFormSubmit{
     padding-top: 17px;
 }
 
-.questionButton input {
+.questionBtnFormSubmit input {
     text-align: center;
     align-items: center;
     width: 187px;
@@ -914,14 +955,14 @@ main section*/
     font-size: 14px;
 }
 
-.questionButton input:hover {
+.questionBtnFormSubmit input:hover {
     background: #D35E22;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
 }
 
 /*feedback*/
 
-.feedback{
+.feedbackBody{
     width: 800px;
     margin: 0 auto 92px;
     background-color: #FF7129;
@@ -930,7 +971,7 @@ main section*/
     position: relative;
 }
 
-.iconCloseWhite{
+.popFeedbackCloseIcon{
     position: absolute;
     top: 22px;
     right: 22px;
@@ -959,12 +1000,14 @@ main section*/
 .feedbackButton {
     margin: 0 auto;
     text-align: center;
-    padding-top: 16px;
     width: 187px;
-    height: 35px;
+    height: 49px;
     border: solid 1px #FFFFFF;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
+    color: #FF7129;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .feedbackButton:hover {
@@ -974,29 +1017,18 @@ main section*/
     background: #20242D;
     border: solid 1px #20242D;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
-}
-
-.feedbackButton a {
-    text-decoration: none;
-    color: #FF7129;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.feedbackButton a:hover {
-    text-decoration: none;
-    color: #FFFFFF;
     font-weight: 700;
     font-size: 14px;
 }
 
 
 /*callbackSection*/
+
 .padding {
     padding-top: 97px;
 }
 
-.callbackSection {
+.callbackSectionBody {
     width: 800px;
     margin: 0 auto;
     background-color: #FFFFFF;
@@ -1090,11 +1122,11 @@ main section*/
     color: #20242D;
 }
 
-.callbackButton {
+.callbackButtonPopup {
     margin-top: 40px;
     padding-top: 17px;
 }
-.callbackButton input {
+.callbackButtonPopup input {
     text-align: center;
     align-items: center;
     width: 187px;
@@ -1107,7 +1139,7 @@ main section*/
     font-size: 14px;
 }
 
-.callbackButton input:hover {
+.callbackButtonPopup input:hover {
     background: #D35E22;
     box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
 }
