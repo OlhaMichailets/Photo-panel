@@ -419,6 +419,76 @@ main section*/
     font-weight: 700;
     font-size: 48px;
     line-height: 47px;
+    padding-left: 16px;
+}
+
+.ProjektyTitleBlock span {
+    position: absolute;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    text-transform: uppercase;
+    opacity: 0.3;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #20242D;
+    margin-top: -70px;
+    margin-left: -27px;
+}
+
+.roundabout {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    max-width: 1600px;
+}
+
+.roundabout img {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+    margin-top: 75px;
+}
+
+.roundaboutHalfElement {
+    opacity: 0.5;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.roundaboutIcon {
+    position: absolute;
+}
+
+.roundabout-left-icon {
+    top: 60%;
+    left: 11%;
+}
+
+.roundabout-right-icon {
+    top: 60%;
+    right: 11%;
+}
+
+.roundabout-calc {
+    display: block;
+    text-align: center;
+    width: 1600px;
+    margin-bottom: 100px;
+}
+
+.projectNumber {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.projectQuantity {
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7E85;
 }
 
 
@@ -537,14 +607,6 @@ main section*/
 }
 
 /*popupCalculator*/
-
-/* .popupCalculator-show {
-    display: block;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 .popupCalculatorBody{
     width: 800px;
@@ -825,38 +887,6 @@ main section*/
     font-weight: 700;
     font-size: 14px;
 }
-
-/* .returnCalculatorButton {
-    text-align: center;
-    padding-top: 16px;
-    width: 187px;
-    height: 35px;
-    border: solid 1px #FFFFFF;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
-}
-
-.returnCalculatorButton:hover {
-    text-align: center;
-    color: #FFFFFF;
-    background: #20242D;
-    border: solid 1px #20242D;
-    box-shadow: 0px 4px 28px rgba(255, 113, 41, 0.29);
-}
-
-.returnCalculatorButton a {
-    text-decoration: none;
-    color: #FF7129;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.returnCalculatorButton a:hover {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-size: 14px;
-} */
 
 .question {
     background-color: #FFFFFF;

@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
     <title>Foton-tech</title>
 </head>
+
+
 <body>
 
     <header class="headerBlock">
@@ -60,24 +63,42 @@
 
     <main>
 
-        <section>
+        <section class="projectSection">
 
             <div class="ProjektyTitleBlock">
 
+                <span>GAllery</span>
                 <h1 class="ProjektyTitle">Projekty</h1>
 
             </div>
 
-            <div>
-                <img src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
+            <div class="roundabout">
+
+                <div>
+                    <img class="roundaboutHalfElement" src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
+                </div>
+
+                <span class="roundabout-left-icon roundaboutIcon">
+                    <img src="img/icon-roundabout-left.png" alt="">
+                </span>
+
+                <div>
+                    <img src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
+                </div>
+
+                <span class="roundabout-right-icon roundaboutIcon">
+                    <img src="img/icon-roundabout-right.png" alt="">
+                </span>
+
+                <div>
+                    <img class="roundaboutHalfElement" src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
+                </div>
+
             </div>
 
-            <div>
-                <img src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
-            </div>
-
-            <div>
-                <img src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
+            <div class="roundabout-calc">
+                <span class="projectNumber">1</span>
+                <span class="projectQuantity">/40</span>
             </div>
 
         </section>
@@ -104,13 +125,11 @@
                 </nav>
             </div>
 
-            <div class="CallbackButton">
-                <button class="CallbackBtn">
-                    <a class="btnCallbackLink" href="#">Oddzwoń</a>
-                </button> 
-            </div>
+            <button class="callbackButton" type="button">Oddzwoń</button>
 
         </div>
+
+        <div class="grayLine"></div>
         
 
         <div class="intellectProperty">
@@ -120,42 +139,49 @@
 
     </footer>
 
-    <section class="callbackSection">
+    <div class="popup callbackSection">
 
-        <div class="iconCloseDefault">
-            <img src="img/icon-close-default.svg" alt="close icon">
-        </div>
+        <div class="callbackSectionBody">
 
-        <div class="callback">
-            <h2 class="callbackHeader">Oddzwoń</h2>
-            <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
-        </div>
+            <div class="padding"></div>
 
-        <form class="callbackForm" action="url">
+            <button class="buttonCloseIcon iconCloseDefault" type="button">
+                <img src="img/icon-close-default.svg" alt="close icon">
+            </button>
 
-            <div class="contactLineCallback">
-
-                <div class="userNameCallback">
-                    <label for="userName">Twoje imię</label>
-                    <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
-                </div>
-
-                <div class="contacUserPhoneCallback">
-                    <label for="userPhone">Telefon</label>
-                    <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
-                </div>
-
+            <div class="callback">
+                <span>Callback</span>
+                <h2 class="callbackHeader">Oddzwoń</h2>
+                <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
             </div>
 
-            <div class="callbackButton">
-                <button class="callbackBtn">
-                    <a type="submit" href="#">Zadzwoń</a>
-                </button>
-            </div>
+            <form class="callbackForm">
 
-        </form>
+                <div class="contactLineCallback">
 
-    </section>
+                    <div class="userNameCallback">
+                        <label for="userName">Twoje imię</label>
+                        <input type="text" name="userName" id="userName" placeholder="Wprowadź swoje imię">
+                    </div>
+
+                    <div class="contacUserPhoneCallback">
+                        <label for="userPhone">Telefon</label>
+                        <input type="text" name="userPhone" id="userPhone" placeholder="Wprowadź telefon">
+                    </div>
+
+                </div>
+
+                <div class="callbackButtonPopup">
+                    <input type="submit" value="Zadzwoń">
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/scripts.js"></script>
     
 </body>
 </html>

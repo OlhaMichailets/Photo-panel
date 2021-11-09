@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     
     <title>Foton-tech</title>
 </head>
+
+
 <body>
 
     <header class="headerBlock">
@@ -110,9 +113,7 @@
                 </nav>
             </div>
 
-            <div class="CallbackButton">
-                <a href="#">Oddzwoń</a>
-            </div>
+            <button class="callbackButton" type="button">Oddzwoń</button>
 
         </div>
 
@@ -126,15 +127,15 @@
 
     </footer>
 
-    <section class="popup">
+    <div class="popup callbackSection">
 
-        <section class="callbackSection">
+        <div class="callbackSectionBody">
 
             <div class="padding"></div>
 
-            <div class="iconCloseDefault">
+            <button class="buttonCloseIcon iconCloseDefault" type="button">
                 <img src="img/icon-close-default.svg" alt="close icon">
-            </div>
+            </button>
 
             <div class="callback">
                 <span>Callback</span>
@@ -142,7 +143,7 @@
                 <p class="callbackTxt">Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>
             </div>
 
-            <form class="callbackForm" action="url">
+            <form class="callbackForm">
 
                 <div class="contactLineCallback">
 
@@ -158,16 +159,17 @@
 
                 </div>
 
-                <div class="callbackButton">
+                <div class="callbackButtonPopup">
                     <input type="submit" value="Zadzwoń">
-                    </button>
                 </div>
 
             </form>
 
-        </section>
+        </div>
 
-    </section>
+    </div>
+
+    <script src="js/scripts.js"></script>
     
 </body>
 </html>
