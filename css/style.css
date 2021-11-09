@@ -397,9 +397,13 @@ main section*/
 }
 
 .AbUsBgImgText {
-    background-image: url('../img/bg-mp-drawing1.png') no-repeat 0 0;
     width: 535px;
     position: absolute;
+    /* top: 41;
+    left: -268; */
+    margin-left: -200px;
+    margin-top: 41px;
+    overflow: ;
 }
 
 .abUs-text-lpart,
