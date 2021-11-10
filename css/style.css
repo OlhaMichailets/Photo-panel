@@ -355,7 +355,8 @@ main section*/
     radial-gradient(50% 179.69% at 50% 50%, rgba(32, 36, 45, 0) 0.3%, #20242D 100%), url(../img/bg-ubUs-main.jpg);
     margin: 0 auto 80px;
     width: 1600px;
-    height: 350px;
+    height: 150px;
+    padding-top: 200px;
 }
 
 .BgImageAbUs {
@@ -370,11 +371,6 @@ main section*/
     -webkit-text-stroke-color: #FFFFFF;
     top: 115px;
     left: 137px;
-}
-
-.abUs-headerImg div {
-    padding-top: 200px;
-    position: relative;
 }
 
 .abUs-header {
@@ -396,14 +392,16 @@ main section*/
     position: relative;
 }
 
+.ForDrawingBg {
+    position: relative;
+    overflow: hidden;
+}
+
 .AbUsBgImgText {
     width: 535px;
     position: absolute;
-    /* top: 41;
-    left: -268; */
-    margin-left: -200px;
-    margin-top: 41px;
-    overflow: ;
+    margin-top: 47px;
+    object-fit: cover;
 }
 
 .abUs-text-lpart,
