@@ -75,3 +75,31 @@ let closeCallbackFormIcon = document.querySelector ('.iconCloseDefault');
 closeCallbackFormIcon.addEventListener('click', function () {
     document.querySelector('.callbackSection').classList.remove('popupShow');
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    new Swiper('.swiper', {
+      slidesPerView: 1.5,
+      centeredSlides: true,
+      spaceBetween: 160,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
+      },
+
+    },
+    )
+});
+
+  const swiperPrev = document.getElementById('swiperPrev')
+  const swiperNext = document.getElementById('swiperNext')
+
+  swiperPrev.addEventListener('click', () => {
+    mySwiper.slidePrev();
+  })
+  swiperNext.addEventListener('click', () => {
+    mySwiper.slideNext();
+  })

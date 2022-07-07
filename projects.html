@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 
     <title>Foton-tech</title>
@@ -72,34 +73,35 @@
 
             </div>
 
-            <div class="roundabout">
-
-                <div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
                     <img class="roundaboutHalfElement" src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
-                </div>
-
-                <span class="roundabout-left-icon roundaboutIcon">
-                    <img src="img/icon-roundabout-left.png" alt="">
-                </span>
-
-                <div>
-                    <img src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
-                </div>
-
-                <span class="roundabout-right-icon roundaboutIcon">
-                    <img src="img/icon-roundabout-right.png" alt="">
-                </span>
-
-                <div>
+                  </div>
+                  <div class="swiper-slide">
                     <img class="roundaboutHalfElement" src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="roundaboutHalfElement" src="img/pr-project1.jpg" width="1018px" height="494px" alt="picture of red roof with solar panels">
+                  </div>
+                  ...
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-pagination-fraction"></div>
 
-            </div>
-
-            <div class="roundabout-calc">
-                <span class="projectNumber">1</span>
-                <span class="projectQuantity">/40</span>
-            </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <span id="swiperPrev" class="roundabout-left-icon roundaboutIcon">
+                        <img src="img/icon-roundabout-left.png" alt="">
+                    </span>
+                </div>
+                <div id="swiperNext" class="swiper-button-next">
+                    <span class="roundabout-right-icon roundaboutIcon">
+                        <img src="img/icon-roundabout-right.png" alt="">
+                    </span>
+                </div>
 
         </section>
 
@@ -130,7 +132,7 @@
         </div>
 
         <div class="grayLine"></div>
-        
+
 
         <div class="intellectProperty">
             <span>Polityka prywatności</span>
@@ -181,7 +183,8 @@
 
     </div>
 
+    <script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
-    
+
 </body>
 </html>
